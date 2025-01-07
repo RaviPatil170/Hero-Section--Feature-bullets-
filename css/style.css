@@ -1,0 +1,114 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  ;
+}
+.hero-leftsection{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 64px;
+  margin: 10px;
+}
+.hero-leftsection h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+.hero-leftsection-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-leftsection p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.icon{
+  display: flex;
+justify-content: center;
+align-items: center;
+background-color: #d3d6db2e;
+border-radius: 50%;
+padding: 3px;
+}
+.hero-rightsection{
+  margin: 10px;
+}
+.img{
+  width: 100%;
+  height: auto;
+}
+.hero-leftsection-cta{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+}
+.btn{
+  cursor: pointer;
+background-color: #D2D6DB;
+width: 175px;
+height: 50px;
+border-radius: 5px;
+}
+.right{
+  background-color: #4338CA;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  .container {
+    flex-direction: column;
+  }
+  img{
+    width: 100%;
+    height: 270px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablet devices */
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  /* Styles for desktop devices */
+}
